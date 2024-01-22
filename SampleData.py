@@ -119,28 +119,31 @@ def delete_per_ep(str):
     else:
         return str
 
+      
+user_details = user_details.drop(["Joined", "Days Watched", "Watching", "On Hold", "Dropped", "Plan to Watch", "Rewatched", "Episodes Watched"], axis = 1)
+user_details[["Mean Score", "Completed", "Total Entries"]] = user_details[["Mean Score", "Completed", "Total Entries"]].fillna(0)
+user_details["Username"] = user_details["Username"].fillna("user")
+user_details["Gender"] = user_details["Gender"].fillna("Non-Binary")
+user_details.rename({"Mal ID":"user_id"}, inplace = True, axis=True)
+# 형변환 
+# Gender -> "category"
+# Mean Score -> "float32"
+# Total Entries -> "int64"
+user_details["Total Entries"] = user_details["Total Entries"].astype("int64")
+user_details["Mean Score"] = user_details["Mean Score"].astype("float32")
+user_details["Gender"] = user_details["Gender"].astype("category")
+
+#=========================================================================
+#===========================user_score변수 전처리=========================
+#=========================================================================
+
 
 anime["Duration"] = anime["Duration"].apply(delete_per_ep)
 # =========================================================================
 # ==========================user_details변수 전처리========================
 # =========================================================================
 
-users_details_DF = users_details_DF.drop(
-    ["Birthday", "Joined", "Days Watched", "Watching", "On Hold", "Dropped", "Plan to Watch", "Rewatched",
-     "Episodes Watched"], axis=1)
-users_details_DF[["Mean Score", "Completed", "Total Entries"]] = users_details_DF[
-    ["Mean Score", "Completed", "Total Entries"]].fillna(0)
-users_details_DF["Username"] = users_details_DF["Username"].fillna("user")
-users_details_DF["Gender"] = users_details_DF["Gender"].fillna("Non-Binary")
-users_details_DF.rename({"Mal ID": "user_id"}, inplace=True, axis=True)
-# 형변환
-# Gender -> "category"
-# Mean Score -> "float32"
-# Total Entries -> "int64"
-users_details_DF["Total Entries"] = users_details_DF["Total Entries"].astype("int64")
-users_details_DF["Mean Score"] = users_details_DF["Mean Score"].astype("float32")
-users_details_DF["Gender"] = users_details_DF["Gender"].astype("category")
-user_details = users_details_DF
+
 # =========================================================================
 # ===========================user_score변수 전처리=========================
 # =========================================================================
