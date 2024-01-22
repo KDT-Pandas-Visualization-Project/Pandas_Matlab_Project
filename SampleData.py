@@ -15,7 +15,7 @@ import datetime as dt
 # d.Studios : Studios열에 있는 고유 값 리스트
 #=========================================================================
 anime = pd.read_csv(r"..\Data\anime-dataset-2023.csv")
-user_details = pd.read_csv(r"..\Data\users-details-2023.csv")
+users_details_DF = pd.read_csv(r"..\Data\users-details-2023.csv")
 user_score=pd.read_csv(r"..\Data\users-score-2023.csv")
 anime_filter=pd.read_csv(r"..\Data\anime-filtered.csv")
 #=========================================================================
@@ -116,6 +116,19 @@ anime["Duration"]=anime["Duration"].apply(delete_per_ep)
 #==========================user_details변수 전처리========================
 #=========================================================================
 
+users_details_DF = users_details_DF.drop(["Birthday", "Joined", "Days Watched", "Watching", "On Hold", "Dropped", "Plan to Watch", "Rewatched", "Episodes Watched"], axis = 1)
+users_details_DF[["Mean Score", "Completed", "Total Entries"]] = users_details_DF[["Mean Score", "Completed", "Total Entries"]].fillna(0)
+users_details_DF["Username"] = users_details_DF["Username"].fillna("user")
+users_details_DF["Gender"] = users_details_DF["Gender"].fillna("Non-Binary")
+users_details_DF.rename({"Mal ID":"user_id"}, inplace = True, axis=True)
+# 형변환
+# Gender -> "category"
+# Mean Score -> "float32"
+# Total Entries -> "int64"
+users_details_DF["Total Entries"] = users_details_DF["Total Entries"].astype("int64")
+users_details_DF["Mean Score"] = users_details_DF["Mean Score"].astype("float32")
+users_details_DF["Gender"] = users_details_DF["Gender"].astype("category")
+user_details = users_details_DF
 #=========================================================================
 #===========================user_score변수 전처리=========================
 #=========================================================================
