@@ -3,7 +3,7 @@ import numpy as np
 import datetime as dt
 
 # 주피터 파일에서 읽어온 데이터를 import할 수 없어, 파이썬 파일에서 읽어온 데이터 사용
-#=========================================================================
+# =========================================================================
 # 변수 정리
 # d.anime : anime-dataset-2023.csv
 # d.user_details : users-details-2023.csv
@@ -13,21 +13,22 @@ import datetime as dt
 # d.Producers : Producers열에 있는 고유 값 리스트
 # d.Licensors : Licensor열에 있는 고유 값 리스트
 # d.Studios : Studios열에 있는 고유 값 리스트
-#=========================================================================
+# =========================================================================
 anime = pd.read_csv(r"..\Data\anime-dataset-2023.csv")
-user_details = pd.read_csv(r"..\Data\users-details-2023.csv")
-user_score=pd.read_csv(r"..\Data\users-score-2023.csv")
-anime_filter=pd.read_csv(r"..\Data\anime-filtered.csv")
-#=========================================================================
-#=======================anime 변수 전처리=================================
-#=========================================================================
+users_details_DF = pd.read_csv(r"..\Data\users-details-2023.csv")
+user_score = pd.read_csv(r"..\Data\users-score-2023.csv")
+anime_filter = pd.read_csv(r"..\Data\anime-filtered.csv")
+# =========================================================================
+# =======================anime 변수 전처리=================================
+# =========================================================================
 # anime : Aired, Premiered 열 삭제 후 상영 시작일(Start_date), 상영 종료일(End_date), 상영일(Aired_Duration)열 추가
-anime["Aired"] # 월 일, 년 to 월 일, 년
-                 # 월 일, 년 to ?
-                 # 월 일, 년
-                 
+anime["Aired"]  # 월 일, 년 to 월 일, 년
+# 월 일, 년 to ?
+# 월 일, 년
+
 # 월별 숫자 딕셔너리 생성
-month_dict={"Dec":12, "Nov":11, "Oct" :10, "Sep":9, "Aug":8, "Jul":7, "Jun":6, "May":5, "Apr":4, "Mar":3, "Feb":2, "Jan":1, "?":0} 
+month_dict = {"Dec": 12, "Nov": 11, "Oct": 10, "Sep": 9, "Aug": 8, "Jul": 7, "Jun": 6, "May": 5, "Apr": 4, "Mar": 3,
+              "Feb": 2, "Jan": 1, "?": 0}
 
 # "to" 를 기준으로 데이터 Parsing
 #  Aired에서 날짜가 1개인 데이터는 Start_date와 End_date의 값이 같음
@@ -35,42 +36,42 @@ Start_date = anime["Aired"].apply(lambda x: x.split("to")[0])
 End_date = anime["Aired"].apply(lambda x: x.split("to")[1] if "to" in x else x)
 
 # 시작 방영일(Start_date) 배열 생성
-insert_series=[]
+insert_series = []
 for i in range(anime["Aired"].count()):
-    if Start_date.iloc[i]=="Not available": # 결측값 처리
+    if Start_date.iloc[i] == "Not available":  # 결측값 처리
         insert_series.append(np.NaN)
-    else :
-        time=("").join(Start_date.iloc[i].split(",")).split()
-        insert_series.append(dt.datetime( 
-                        year=int(time[len(time)-1]), 
-                        month=month_dict[time[0]] if len(time)>1 else 1, 
-                        day=int(time[1] if len(time)==3 else 1)
-                    ))
+    else:
+        time = ("").join(Start_date.iloc[i].split(",")).split()
+        insert_series.append(dt.datetime(
+            year=int(time[len(time) - 1]),
+            month=month_dict[time[0]] if len(time) > 1 else 1,
+            day=int(time[1] if len(time) == 3 else 1)
+        ))
 # 배열 생성 후 열 생성
-anime["Start_date"]=insert_series
+anime["Start_date"] = insert_series
 
 # 종료 방영일(End_date) 배열 생성
-insert_series=[]
+insert_series = []
 for i in range(anime["Aired"].count()):
-    if End_date.iloc[i].strip() in ["Not available", "?"]: # 결측값 처리
+    if End_date.iloc[i].strip() in ["Not available", "?"]:  # 결측값 처리
         insert_series.append(np.NaN)
-    else :
-        time=("").join(End_date.iloc[i].split(",")).split()
-        insert_series.append(dt.datetime( 
-                        year=int(time[len(time)-1]), 
-                        month=month_dict[time[0]] if len(time)>1 else 1, 
-                        day=int(time[1] if len(time)==3 else 1)
-                    ))
+    else:
+        time = ("").join(End_date.iloc[i].split(",")).split()
+        insert_series.append(dt.datetime(
+            year=int(time[len(time) - 1]),
+            month=month_dict[time[0]] if len(time) > 1 else 1,
+            day=int(time[1] if len(time) == 3 else 1)
+        ))
 # 배열 생성 후 열 생성
-anime["End_date"]=insert_series
- 
+anime["End_date"] = insert_series
+
 # 상영일(Aired_Duration)행 추가
-anime["Aired_Duration"]=anime["End_date"]-anime["Start_date"]
+anime["Aired_Duration"] = anime["End_date"] - anime["Start_date"]
 
 # 기존의 Aired, Premiered 행 삭제(중복 열 삭제)
-anime.drop(columns=["Aired","Premiered"], inplace=True)
-#=========================================================================
-#=========================================================================
+anime.drop(columns=["Aired", "Premiered"], inplace=True)
+# =========================================================================
+# =========================================================================
 # 열 데이터 타입 변경
 '''
 Score : object -> float32로 변경 -> Unsianged int 로 변경
@@ -84,45 +85,69 @@ Rank : object -> float32 로 변경 -> Unsianged int 로 변경
 Scored By : object -> float32 로 변경 -> Unsianged int 로 변경
 '''
 # 결측값 '0'으로 처리
-anime["Score"].replace("UNKNOWN","0", inplace=True)
-anime["Episodes"].replace("UNKNOWN","0", inplace=True)
-anime["Rank"].replace("UNKNOWN","0", inplace=True)
-anime["Scored By"].replace("UNKNOWN","0", inplace=True)
+anime["Score"].replace("UNKNOWN", "0", inplace=True)
+anime["Episodes"].replace("UNKNOWN", "0", inplace=True)
+anime["Rank"].replace("UNKNOWN", "0", inplace=True)
+anime["Scored By"].replace("UNKNOWN", "0", inplace=True)
 
-anime=anime.astype({"Score":"float32", "Type":"category", "Episodes":"float32", "Status":"category", "Source":"category", "Rating":"category", "Rank":"float32", "Scored By":"float32"})
+anime = anime.astype(
+    {"Score": "float32", "Type": "category", "Episodes": "float32", "Status": "category", "Source": "category",
+     "Rating": "category", "Rank": "float32", "Scored By": "float32"})
 
-# float 데이터 타입의 열들을 unsigned int형으로 변환 
-anime=anime.astype({"Episodes":"uint8", "Rank":"uint8", "Scored By":"uint8"})
-#=========================================================================
+# float 데이터 타입의 열들을 unsigned int형으로 변환
+anime = anime.astype({"Episodes": "uint8", "Rank": "uint8", "Scored By": "uint8"})
+# =========================================================================
 # 유용한 변수 추가(설명은 Pre_Processing.ipynb, 위의 주석 참고)
 
-Genre=anime["Genres"].str.split(", ").apply(set).explode().reset_index(drop=True).value_counts().index # 장르 생성
+Genre = anime["Genres"].str.split(", ").apply(set).explode().reset_index(drop=True).value_counts().index  # 장르 생성
 
-Producers=anime["Producers"].str.split(", ").apply(set).explode().reset_index(drop=True).value_counts().index # 프로듀서 리스트 생성
+Producers = anime["Producers"].str.split(", ").apply(set).explode().reset_index(
+    drop=True).value_counts().index  # 프로듀서 리스트 생성
 
-Licensors=anime["Licensors"].str.split(", ").apply(set).explode().reset_index(drop=True).value_counts().index # 프로듀서 리스트 생성
+Licensors = anime["Licensors"].str.split(", ").apply(set).explode().reset_index(
+    drop=True).value_counts().index  # 프로듀서 리스트 생성
 
-Studios=anime["Studios"].str.split(", ").apply(set).explode().reset_index(drop=True).value_counts().index # 프로듀서 리스트 생성
-#=========================================================================
+Studios = anime["Studios"].str.split(", ").apply(set).explode().reset_index(
+    drop=True).value_counts().index  # 프로듀서 리스트 생성
+
+
+# =========================================================================
 # Duration 열 값 표준화(24min per ep, 24min => 24min으로 통일)
 def delete_per_ep(str):
     if "per ep" in str:
         return str[:-7].strip()
-    else :
+    else:
         return str
-    
-anime["Duration"]=anime["Duration"].apply(delete_per_ep)
-#=========================================================================
-#==========================user_details변수 전처리========================
-#=========================================================================
 
-#=========================================================================
-#===========================user_score변수 전처리=========================
-#=========================================================================
 
-#=========================================================================
+anime["Duration"] = anime["Duration"].apply(delete_per_ep)
+# =========================================================================
+# ==========================user_details변수 전처리========================
+# =========================================================================
+
+users_details_DF = users_details_DF.drop(
+    ["Birthday", "Joined", "Days Watched", "Watching", "On Hold", "Dropped", "Plan to Watch", "Rewatched",
+     "Episodes Watched"], axis=1)
+users_details_DF[["Mean Score", "Completed", "Total Entries"]] = users_details_DF[
+    ["Mean Score", "Completed", "Total Entries"]].fillna(0)
+users_details_DF["Username"] = users_details_DF["Username"].fillna("user")
+users_details_DF["Gender"] = users_details_DF["Gender"].fillna("Non-Binary")
+users_details_DF.rename({"Mal ID": "user_id"}, inplace=True, axis=True)
+# 형변환
+# Gender -> "category"
+# Mean Score -> "float32"
+# Total Entries -> "int64"
+users_details_DF["Total Entries"] = users_details_DF["Total Entries"].astype("int64")
+users_details_DF["Mean Score"] = users_details_DF["Mean Score"].astype("float32")
+users_details_DF["Gender"] = users_details_DF["Gender"].astype("category")
+user_details = users_details_DF
+# =========================================================================
+# ===========================user_score변수 전처리=========================
+# =========================================================================
+
+# =========================================================================
 #                        anime 변수, 열 한국어 설명
-#=========================================================================
+# =========================================================================
 '''
 (int)            anime_id:    각 애니메이션의 고유 ID.
 (object)         Name:        원래 언어로 된 애니메이션의 이름.
@@ -153,6 +178,5 @@ anime["Duration"]=anime["Duration"].apply(delete_per_ep)
 (timedelta64[ns])Aired_Duration : 상영일
 '''
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     pass
