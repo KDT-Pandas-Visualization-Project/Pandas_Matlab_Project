@@ -97,20 +97,20 @@
 
 
 ## 관련 데이터 포털   
-  +KOSIS 국가통계포털 : https://kosis.kr/index/index.do   
-  +2023 대한민국 사회안전지수 : https://www.mt.co.kr/ksi/   
-  +정보공개포털 : https://www.open.go.kr/com/main/mainView.do   
-  +statista : https://www.statista.com/studies-and-reports/   
-  +한국관광 데이터랩 : https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do   
-  +OECD statistic : https://stats.oecd.org/   
-  +세계은행 데이터 : https://data.worldbank.org/   
-  +기상청 지진정보 데이터 : https://www.data.go.kr/data/15082971/fileData.do   
-  +Out world in data : https://ourworldindata.org/search?q=democracy   
-  +일본 애니 영화 순위 : https://www.kogyotsushin.com/archives/alltime/   
-  +MyAnimeList : https://namu.wiki/w/MyAnimeList   
-  +pyplot-bar차트 꾸미기 : https://zephyrus1111.tistory.com/9   
-  +오타쿠 세대 정리 노트 : https://note.com/hogehoge_aichi/n/n4e1ca9d536ec   
-  +깃허브 협업 git bash 코드 : https://velog.io/@minwest/github%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%91%EC%97%85-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#+basic   
+  + KOSIS 국가통계포털 : https://kosis.kr/index/index.do   
+  + 2023 대한민국 사회안전지수 : https://www.mt.co.kr/ksi/   
+  + 정보공개포털 : https://www.open.go.kr/com/main/mainView.do   
+  + statista : https://www.statista.com/studies-and-reports/   
+  + 한국관광 데이터랩 : https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do   
+  + OECD statistic : https://stats.oecd.org/   
+  + 세계은행 데이터 : https://data.worldbank.org/   
+  + 기상청 지진정보 데이터 : https://www.data.go.kr/data/15082971/fileData.do   
+  + Out world in data : https://ourworldindata.org/search?q=democracy   
+  + 일본 애니 영화 순위 : https://www.kogyotsushin.com/archives/alltime/   
+  + MyAnimeList : https://namu.wiki/w/MyAnimeList   
+  + pyplot-bar차트 꾸미기 : https://zephyrus1111.tistory.com/9   
+  + 오타쿠 세대 정리 노트 : https://note.com/hogehoge_aichi/n/n4e1ca9d536ec   
+  + 깃허브 협업 git bash 코드 : https://velog.io/@minwest/github%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%91%EC%97%85-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#+basic   
 
 <hr/>
 
