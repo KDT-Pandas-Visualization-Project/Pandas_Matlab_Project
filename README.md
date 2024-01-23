@@ -55,6 +55,7 @@
   23. Members: 플랫폼에서 애니메이션을 목록에 추가한 회원 수.   
   24. Image Url : 애니메이션 이미지 또는 포스터의 URL.   
 <hr/>   
+
 #### users-details-2023.csv     
   1. Mal ID: 각 사용자의 고유 ID.   
   2. Username: 사용자의 사용자 이름입니다.   
@@ -73,6 +74,7 @@
   15. Rewatched: 사용자가 다시 본 애니메이션의 수.   
   16. Episodes Watched: 사용자가 시청한 총 에피소드 수.   
 <hr/>
+
 #### users-score-2023.csv   
   1. user_id: 각 사용자의 고유 ID.   
   2. Username:  사용자의 사용자 이름입니다.   
@@ -82,27 +84,26 @@
 <hr/>
 
 
-
-
-
-
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=noah2397)](https://github.com/anuraghazra/github-readme-stats)
 
 
 ## 관련 데이터 포털   
-KOSIS 국가통계포털 : https://kosis.kr/index/index.do   
-2023 대한민국 사회안전지수 : https://www.mt.co.kr/ksi/   
-정보공개포털 : https://www.open.go.kr/com/main/mainView.do   
-statista : https://www.statista.com/studies-and-reports/   
-한국관광 데이터랩 : https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do   
-OECD statistic : https://stats.oecd.org/   
-세계은행 데이터 : https://data.worldbank.org/   
-기상청 지진정보 데이터 : https://www.data.go.kr/data/15082971/fileData.do   
-Out world in data : https://ourworldindata.org/search?q=democracy   
-일본 애니 영화 순위 : https://www.kogyotsushin.com/archives/alltime/   
-MyAnimeList : https://namu.wiki/w/MyAnimeList   
-pyplot-bar차트 꾸미기 : https://zephyrus1111.tistory.com/9   
-오타쿠 세대 정리 노트 : https://note.com/hogehoge_aichi/n/n4e1ca9d536ec   
-깃허브 협업 git bash 코드 : https://velog.io/@minwest/github%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%91%EC%97%85-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#basic   
+  +KOSIS 국가통계포털 : https://kosis.kr/index/index.do   
+  +2023 대한민국 사회안전지수 : https://www.mt.co.kr/ksi/   
+  +정보공개포털 : https://www.open.go.kr/com/main/mainView.do   
+  +statista : https://www.statista.com/studies-and-reports/   
+  +한국관광 데이터랩 : https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do   
+  +OECD statistic : https://stats.oecd.org/   
+  +세계은행 데이터 : https://data.worldbank.org/   
+  +기상청 지진정보 데이터 : https://www.data.go.kr/data/15082971/fileData.do   
+  +Out world in data : https://ourworldindata.org/search?q=democracy   
+  +일본 애니 영화 순위 : https://www.kogyotsushin.com/archives/alltime/   
+  +MyAnimeList : https://namu.wiki/w/MyAnimeList   
+  +pyplot-bar차트 꾸미기 : https://zephyrus1111.tistory.com/9   
+  +오타쿠 세대 정리 노트 : https://note.com/hogehoge_aichi/n/n4e1ca9d536ec   
+  +깃허브 협업 git bash 코드 : https://velog.io/@minwest/github%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%91%EC%97%85-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#+basic   
+
+<hr/>
 
 ## 애로사항   
 VS code 에서 파일이 읽히지 않을 때 : https://barrer.tistory.com/67   
