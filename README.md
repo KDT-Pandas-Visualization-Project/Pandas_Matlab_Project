@@ -26,10 +26,14 @@
 ## 주제 : Pandas와 Matplotlib을 활용한 애니메이션 데이터 분석 & 시각화   
 
 
+## 데이터셋 링크 : [myanimelist-dataset](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset?resource=download)   
+<img src="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F11299784%2Fcaaff69976c0a1e97c7d55eb82383680%2Fstatic-assets-upload6207184415643227018.jpg?generation=1686492418151095&alt=media" width="1200" height="500">
+
 
 ## 사용하는 데이터 열 해석   
 
 #### Anime-dataset-2023.csv   
+```
   1. anime_id: 각 애니메이션의 고유 ID.   
   2. Name:원래 언어로 된 애니메이션의 이름.   
   3. English name:애니메이션의 영어 이름.   
@@ -53,10 +57,12 @@
   21. Favorites:애니메이션이 사용자가 즐겨찾기로 표시한 횟수   
   22. Scored By:애니메이션에 점수를 매긴 사용자 수.   
   23. Members: 플랫폼에서 애니메이션을 목록에 추가한 회원 수.   
-  24. Image Url : 애니메이션 이미지 또는 포스터의 URL.   
+  24. Image Url : 애니메이션 이미지 또는 포스터의 URL.
+```
 <hr/>   
 
 #### users-details-2023.csv     
+```
   1. Mal ID: 각 사용자의 고유 ID.   
   2. Username: 사용자의 사용자 이름입니다.   
   3. Gender:사용자의 성별.   
@@ -72,15 +78,18 @@
   13. Plan to Watch:  사용자가 앞으로 볼 예정인 애니메이션의 개수.   
   14. Total Entries: 사용자 목록에 있는 애니메이션 항목의 총 수.   
   15. Rewatched: 사용자가 다시 본 애니메이션의 수.   
-  16. Episodes Watched: 사용자가 시청한 총 에피소드 수.   
+  16. Episodes Watched: 사용자가 시청한 총 에피소드 수.
+```
 <hr/>
 
 #### users-score-2023.csv   
+```
   1. user_id: 각 사용자의 고유 ID.   
   2. Username:  사용자의 사용자 이름입니다.   
   3. anime_id: 각 애니메이션의 고유 ID.   
   4. Anime Title: 애니메이션 제목.   
-  5. rating: 사용자가 애니메이션에 부여한 등급입니다.   
+  5. rating: 사용자가 애니메이션에 부여한 등급입니다.
+```
 <hr/>
 
 
