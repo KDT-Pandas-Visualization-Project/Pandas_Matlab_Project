@@ -29,6 +29,13 @@
 ## 데이터셋 링크 : [myanimelist-dataset](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset?resource=download)   
 <img src="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F11299784%2Fcaaff69976c0a1e97c7d55eb82383680%2Fstatic-assets-upload6207184415643227018.jpg?generation=1686492418151095&alt=media" width="1200" height="500">
 
+## 멤버별 분석 항목
+> ### 이시명 : 한/일에서 인기 있는 일본 애니 영화는 어떤 평을 받고 있을까?   
+> ### 명노아 : 애니 데이터를 "장르" 로 바라보았다   
+> ### 이윤서 : 애니 데이터 평점과 선호도 분석   
+> ### 옥영신 : 일본어 상업과 애니메이션 인기의 필연적 연결고리를 찾다
+<hr/>
+
 
 ## 사용하는 데이터 열 해석   
 
