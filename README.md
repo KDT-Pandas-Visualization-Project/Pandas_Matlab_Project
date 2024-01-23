@@ -1,7 +1,7 @@
 # Pandas + Matplotlib 응용 프로젝트
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23386317&title_bg=%23000000&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits%28%EC%A1%B0%ED%9A%8C%EC%88%98%29&edge_flat=false"/></a>
 
-## 노션 페이지 : https://www.notion.so/3404a9116b304dc5871e6a2b97e0ce9f?v=cde676cbcd6d4181a11719320a6691b5&pvs=4   
+## 노션 페이지 : [Notion](https://www.notion.so/3404a9116b304dc5871e6a2b97e0ce9f?v=cde676cbcd6d4181a11719320a6691b5&pvs=4   )
 ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
