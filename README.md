@@ -26,6 +26,9 @@
 ## 주제 : Pandas와 Matplotlib을 활용한 애니메이션 데이터 분석 & 시각화   
 
 
+[활용 데이터 링크](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset?resource=download)
+<img src="https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F11299784%2Fcaaff69976c0a1e97c7d55eb82383680%2Fstatic-assets-upload6207184415643227018.jpg?generation=1686492418151095&alt=media" width="500" height="500">
+
 
 ## 사용하는 데이터 열 해석   
 
