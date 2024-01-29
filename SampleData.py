@@ -119,6 +119,24 @@ def delete_per_ep(str):
     else:
         return str
 
+      
+user_details = user_details.drop(["Joined", "Days Watched", "Watching", "On Hold", "Dropped", "Plan to Watch", "Rewatched", "Episodes Watched"], axis = 1)
+user_details[["Mean Score", "Completed", "Total Entries"]] = user_details[["Mean Score", "Completed", "Total Entries"]].fillna(0)
+user_details["Username"] = user_details["Username"].fillna("user")
+user_details["Gender"] = user_details["Gender"].fillna("Non-Binary")
+user_details.rename({"Mal ID":"user_id"}, inplace = True, axis=True)
+# 형변환 
+# Gender -> "category"
+# Mean Score -> "float32"
+# Total Entries -> "int64"
+user_details["Total Entries"] = user_details["Total Entries"].astype("int64")
+user_details["Mean Score"] = user_details["Mean Score"].astype("float32")
+user_details["Gender"] = user_details["Gender"].astype("category")
+
+#=========================================================================
+#===========================user_score변수 전처리=========================
+#=========================================================================
+
 
 anime["Duration"] = anime["Duration"].apply(delete_per_ep)
 # =========================================================================
@@ -139,6 +157,7 @@ user_details.rename({"Mal ID": "user_id"}, inplace=True, axis=True)
 user_details["Total Entries"] = user_details["Total Entries"].astype("int64")
 user_details["Mean Score"] = user_details["Mean Score"].astype("float32")
 user_details["Gender"] = user_details["Gender"].astype("category")
+
 # =========================================================================
 # ===========================user_score변수 전처리=========================
 # =========================================================================
