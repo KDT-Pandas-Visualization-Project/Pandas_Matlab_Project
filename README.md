@@ -210,18 +210,14 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 >>  - 나무위키 역대 일본 애니메이션 영화 한국 흥행 순위 참고
 >>  - koreanMovieRank 한국 내 애니 영화 전체 흥행 순위 DataFrame 생성
 >> 18p 넣기
-
 >3. KMR 내 컬럼명 추가
 >4. 일본 영화DF, 한국 영화DF outer join
 >5. 이름이 다른 경우 확인하여 replace로 동일하게 변경
 >6. 다시 일본 영화DF, 한국 영화DF inner join
 >7. 공통된 7작품 확인
-
 >> 23p 넣기
-
 >8. anime-dataset-2023에서 7작품 찾기
 >9. 필요 컬럼 추가 후 데이터 전처리 완료
-
 >> 28p 넣기
 
 ### 데이터 분석
@@ -234,13 +230,9 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 #### 5. 데이터 분석
 >5.1 순위/흥행 수입(억 엔), 한국순위/관객 수, 순위/Members
 >관객 수에 따른 순위이며 자연스럽게 흥행 수익과 연관되며 해당 팬들이 많을 것임을 짐작해볼 수 있는 지표
-
 > 5.2 Favorites / 순위
-
 > 5.3 한국순위 / 제작연도
-
 > 5.4 Popularity / 한국순위
-
 > 5.5 제작연도/관객 수
 
 <bold> 각 컬럼관의 관계를 영화별로 살펴볼 수 있었다</bold>
