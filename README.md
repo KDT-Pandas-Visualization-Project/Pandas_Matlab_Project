@@ -204,21 +204,21 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 > 1. 일본 영화 전체 흥행 순위 전처리
 >>   - japanMovieRank 일본 영화 전체 흥행 순위 DataFrame 불러오기
 >>  - 애니메이션 영화만 10개 추리기, 인덱스 다시 0부터 순차적으로 부여
->><img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true" alt="일본 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true" alt="일본 순위" width="480"/>
 > 2. 한국 영화 전체 흥행 순위 전처리
 >>  - 한국 영화진흥위원회는 API 미이용시 총 순위 200위까지만 제공
 >>  - 나무위키 역대 일본 애니메이션 영화 한국 흥행 순위 참고
 >>  - koreanMovieRank 한국 내 애니 영화 전체 흥행 순위 DataFrame 생성
->><img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_018.jpg?raw=true" alt="한국 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_018.jpg?raw=true" alt="한국 순위" width="480"/>
 >3. KMR 내 컬럼명 추가
 >4. 일본 영화DF, 한국 영화DF outer join
 >5. 이름이 다른 경우 확인하여 replace로 동일하게 변경
 >6. 다시 일본 영화DF, 한국 영화DF inner join
 >7. 공통된 7작품 확인
->><img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_023.jpg?raw=true" alt="데이터 전처리" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_023.jpg?raw=true" alt="데이터 전처리" width="480"/>
 >8. anime-dataset-2023에서 7작품 찾기
 >9. 필요 컬럼 추가 후 데이터 전처리 완료
->><img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_028.jpg?raw=true" alt="공통 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_028.jpg?raw=true" alt="공통 순위" width="480"/>
 
 ### 데이터 분석
 
