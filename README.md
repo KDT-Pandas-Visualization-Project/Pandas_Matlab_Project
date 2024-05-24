@@ -269,6 +269,7 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 
 <bold> 각 컬럼 간의 관계를 영화별로 살펴볼 수 있었다</bold>
 
+<hr/>   
 
 
 
