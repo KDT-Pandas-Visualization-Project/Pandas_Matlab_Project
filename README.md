@@ -197,12 +197,12 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 ### 일본 내 일본 애니메이션 영화 TOP 100 자료수집
 - https://www.kogyotsushin.com/archives/alltime
 ### 데이터 전처리
-1. 일본 영화 전체 흥행 순위 전처리
-  - japanMovieRank 일본 영화 전체 흥행 순위 DataFrame 불러오기
-  - 애니메이션 영화만 10개 추리기, 인덱스 다시 0부터 순차적으로 부여
+> 1. 일본 영화 전체 흥행 순위 전처리
+>   - japanMovieRank 일본 영화 전체 흥행 순위 DataFrame 불러오기
+>   - 애니메이션 영화만 10개 추리기, 인덱스 다시 0부터 순차적으로 부여
 11p
 
-2. 한국 영화 전체 흥행 순위 전처리
+> 2. 한국 영화 전체 흥행 순위 전처리
   - 한국 영화진흥위원회는 API 미이용시 총 순위 200위까지만 제공
   - 나무위키 역대 일본 애니메이션 영화 한국 흥행 순위 참고
   - koreanMovieRank 한국 내 애니 영화 전체 흥행 순위 DataFrame 생성
