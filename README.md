@@ -217,12 +217,12 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 >6. 다시 일본 영화DF, 한국 영화DF inner join
 >7. 공통된 7작품 확인
 
-23p 넣기
+>> 23p 넣기
 
 >8. anime-dataset-2023에서 7작품 찾기
 >9. 필요 컬럼 추가 후 데이터 전처리 완료
 
-28p 넣기
+>> 28p 넣기
 
 ### 데이터 분석
 
