@@ -246,18 +246,26 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 
 
 #### 5. 데이터 분석
->5.1 순위/흥행 수입(억 엔), 한국순위/관객 수, 순위/Members
->> 
->관객 수에 따른 순위이며 자연스럽게 흥행 수익과 연관되며 해당 팬들이 많을 것임을 짐작해볼 수 있는 지표
->> 
+>5.1 순위/흥행 수입(억 엔), 한국순위/관객 수, 순위/Members 
+>>관객 수에 따른 순위이며 자연스럽게 흥행 수익과 연관되며 해당 팬들이 많을 것임을 짐작해볼 수 있는 지표
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_033.jpg?raw=true" alt="데이터 분석5-1" width="720"/>
+
 >5.2 Favorites / 순위
->>
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_034.jpg?raw=true" alt="데이터 분석5-2" width="720"/>
+
 >5.3 한국순위 / 제작연도
->>
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_035.jpg?raw=true" alt="데이터 분석5-3" width="720"/>
+
 >5.4 Popularity / 한국순위
->>
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_036.jpg?raw=true" alt="데이터 분석5-4" width="720"/>
+
 >5.5 제작연도/관객 수
->>
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_037.jpg?raw=true" alt="데이터 분석5-5" width="720"/>
 
 <bold> 각 컬럼 간의 관계를 영화별로 살펴볼 수 있었다</bold>
 
