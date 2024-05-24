@@ -193,7 +193,7 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 
 <hr/>
 
-1p 넣기
+![1](https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_001.jpg?raw=true)
 
 
 ## 이시명 : 한/일에서 인기있는 일본 애니 영화는 어떤 평을 받고 있을까?
