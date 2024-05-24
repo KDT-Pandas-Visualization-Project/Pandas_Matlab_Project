@@ -206,13 +206,13 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 >>   - japanMovieRank 일본 영화 전체 흥행 순위 DataFrame 불러오기
 >>  - 애니메이션 영화만 10개 추리기, 인덱스 다시 0부터 순차적으로 부여
 
-<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true" alt="일본 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true" alt="일본 순위" width="720"/>
 
 > 2. 한국 영화 전체 흥행 순위 전처리
 >>  - 한국 영화진흥위원회는 API 미이용시 총 순위 200위까지만 제공
 >>  - 나무위키 역대 일본 애니메이션 영화 한국 흥행 순위 참고
 >>  - koreanMovieRank 한국 내 애니 영화 전체 흥행 순위 DataFrame 생성
-<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_018.jpg?raw=true" alt="한국 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_018.jpg?raw=true" alt="한국 순위" width="720"/>
 
 >3. KMR 내 컬럼명 추가
 >4. 일본 영화DF, 한국 영화DF outer join
@@ -220,23 +220,30 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 >6. 다시 일본 영화DF, 한국 영화DF inner join
 >7. 공통된 7작품 확인
 
-<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_023.jpg?raw=true" alt="데이터 전처리" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_023.jpg?raw=true" alt="데이터 전처리" width="720"/>
 
 >8. anime-dataset-2023에서 7작품 찾기
 >9. 필요 컬럼 추가 후 데이터 전처리 완료
 
-<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_028.jpg?raw=true" alt="공통 순위" width="480"/>
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_028.jpg?raw=true" alt="공통 순위" width="720"/>
 
 ### 데이터 분석
 
 >1. 감독별 갯수 확인
->> 29p 넣기
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_029.jpg?raw=true" alt="데이터 분석1" width="720"/>
+
 >2. 컬럼별 산포도 확인
->> 30p 넣기
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_030.jpg?raw=true" alt="데이터 분석2" width="720"/>
+
 >3. 컬럼별 분산 확인
->> 31p 넣기
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_031.jpg?raw=true" alt="데이터 분석3" width="720"/>
+
 >4. 컬럼별 히트맵 확인
->> 32p 넣기
+
+<img src="https://github.com/KDT-Pandas-Visualization-Project/Pandas_Matlab_Project/blob/master/images/02.%20Pandas%20-%20사타쿠_페이지_032.jpg?raw=true" alt="데이터 분석4" width="720"/>
+
 
 #### 5. 데이터 분석
 >5.1 순위/흥행 수입(억 엔), 한국순위/관객 수, 순위/Members
