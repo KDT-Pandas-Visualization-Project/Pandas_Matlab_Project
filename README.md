@@ -191,7 +191,9 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 ```
 <hr/>
 
-=======
+<hr/>
+<hr/>
+
 ## 이시명 : 한/일에서 인기있는 일본 애니 영화는 어떤 평을 받고 있을까?
 ### 일본 내 일본 애니메이션 영화 TOP 100 자료수집
 - https://www.kogyotsushin.com/archives/alltime
