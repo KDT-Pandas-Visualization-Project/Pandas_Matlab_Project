@@ -200,7 +200,7 @@ https://www.kofic.or.kr/kofic/business/infm/introData.do
 > 1. 일본 영화 전체 흥행 순위 전처리
 >>   - japanMovieRank 일본 영화 전체 흥행 순위 DataFrame 불러오기
 >>  - 애니메이션 영화만 10개 추리기, 인덱스 다시 0부터 순차적으로 부여
->> ![일본 순위](https://github.com/juugii-ho/KDT_3-4W_Project_Pandas_Matplotlib_Project/blob/master/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true)
+![일본 순위](https://github.com/juugii-ho/KDT_3-4W_Project_Pandas_Matplotlib_Project/blob/master/02.%20Pandas%20-%20사타쿠_페이지_011.jpg?raw=true)
 > 2. 한국 영화 전체 흥행 순위 전처리
 >>  - 한국 영화진흥위원회는 API 미이용시 총 순위 200위까지만 제공
 >>  - 나무위키 역대 일본 애니메이션 영화 한국 흥행 순위 참고
